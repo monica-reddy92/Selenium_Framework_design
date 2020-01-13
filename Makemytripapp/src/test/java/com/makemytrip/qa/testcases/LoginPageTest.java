@@ -31,14 +31,8 @@ public class LoginPageTest extends TestBase
 		System.out.println(title);
 		Assert.assertEquals(title, "MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday");
 	}
-	
+		
 	@Test(priority=2)
-	public void makeMytripLogoImageTest(){
-		boolean flag = loginPage.validateMakemyTripImage();
-		Assert.assertTrue(flag);
-	}
-	
-	@Test(priority=3)
 	public void loginTest(){
 		flightsPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
