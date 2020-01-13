@@ -19,8 +19,9 @@ public class LoginPageTest extends TestBase
 	}
 	
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() throws InterruptedException{
 		initialization();
+		//Thread.sleep(5000);
 		loginPage = new LoginPage();	
 	}
 	
